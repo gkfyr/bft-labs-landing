@@ -20,11 +20,11 @@ export function Hero() {
             Byzantine Fault Tolerant Systems Lab
           </h1>
 
-          <p className="text-lg md:text-xl leading-relaxed mb-4">
+          <p className="text-lg md:text-xl leading-relaxed mono-font tracking-tighter mb-4">
             Exploring the frontiers of Byzantine Fault Tolerant consensus and distributed systems.
           </p>
 
-          <p className="text-base md:text-lg leading-relaxed text-black/70 mb-8">
+          <p className="text-base md:text-lg mono-font text-black/70 mb-8">
             We build tools and conduct research to advance the understanding of consensus protocols and blockchain
             technology.
           </p>

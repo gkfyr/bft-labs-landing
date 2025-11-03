@@ -2,6 +2,7 @@ import type React from "react";
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import { Press_Start_2P } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
@@ -10,6 +11,10 @@ const _pressStart = Press_Start_2P({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-pixel",
+});
+const _mono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
 });
 
 export const metadata: Metadata = {
@@ -29,7 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${_geist.className} ${_pressStart.variable} antialiased`}>
+      <body className={`${_geist.className} ${_pressStart.variable} ${_mono.variable} antialiased`}>
         {children}
         <Analytics />
       </body>

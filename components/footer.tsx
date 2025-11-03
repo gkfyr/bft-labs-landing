@@ -1,4 +1,4 @@
-import { Github, Mail, BookOpen, ArrowUp } from "lucide-react";
+import { Github, Mail, BookOpen, ArrowUp, Twitter } from "lucide-react";
 
 export function Footer() {
   return (
@@ -56,6 +56,15 @@ export function Footer() {
                 className="border-2 border-black p-3 hover:bg-black hover:text-[#DAD9D6] transition-colors"
               >
                 <Github className="w-5 h-5" />
+              </a>
+              <a
+                href="https://x.com/bftlabs"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter"
+                className="border-2 border-black p-3 hover:bg-black hover:text-[#DAD9D6] transition-colors"
+              >
+                <Twitter className="w-5 h-5" />
               </a>
               <a
                 href="mailto:hello@bftlabs.org"

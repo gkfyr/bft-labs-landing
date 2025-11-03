@@ -30,13 +30,15 @@ export function Projects() {
   return (
     <section id="projects" className="px-4 md:px-8 py-24 md:py-32 border-t-2 border-black scroll-mt-24">
       <div className="max-w-4xl mx-auto">
-        <h2 className="pixel-font text-xs md:text-sm mb-16 text-center">COMETBFT ANALYZER</h2>
+        <h2 className="pixel-font text-xs md:text-sm mb-16 text-center">CometBFT Analyzer</h2>
 
         <div className="space-y-12">
           {repositories.map((repo) => (
             <div key={repo.name} className="border-2 border-black p-6 md:p-8">
               <div className="flex items-start justify-between gap-4 mb-4">
-                <h3 className="pixel-font text-[10px] md:text-xs flex-1 break-all">{repo.name}</h3>
+                <h3 className="mono-font font-extrabold text-xs md:text-lg flex-1 leading-none break-all">
+                  {repo.name}
+                </h3>
                 <a
                   href={repo.url}
                   target="_blank"
@@ -47,7 +49,7 @@ export function Projects() {
                   <ExternalLink className="w-5 h-5" />
                 </a>
               </div>
-              <p className="text-sm leading-relaxed">{repo.description}</p>
+              <p className="text-sm mono-font tracking-tight leading-relaxed">{repo.description}</p>
             </div>
           ))}
         </div>
